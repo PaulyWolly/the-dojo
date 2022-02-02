@@ -4,7 +4,7 @@ import 'firebase/auth'
 import 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCuU6GTyytMiWp91uYuJuT20RvZGd-aaYA",
+  apiKey: "XXX",
   authDomain: "react-firebase-dojo-6c824.firebaseapp.com",
   projectId: "react-firebase-dojo-6c824",
   storageBucket: "react-firebase-dojo-6c824.appspot.com",
