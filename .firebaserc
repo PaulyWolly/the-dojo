@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "react-firebase-dojo-6c824",
+    "staging": "react-firebase-dojo-6c824"
+  },
+  "targets": {}
+}
