@@ -6,7 +6,7 @@
   box-sizing: border-box;
   position: relative;
   color: #fff;
-  height: 1000px !important;
+  height: 300vh !important;
 }
 .sidebar-content {
   position: fixed;

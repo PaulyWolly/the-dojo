@@ -43,7 +43,7 @@ export default function ProjectComments({ project }) {
               <p className='comment-displayName'>{comment.displayName}</p>
             </div>
             <div className="comment-date">
-              <p>{formatDistanceToNow(comment.createdAt.toDate(), { addSuffix:true })}</p>
+              <small>{formatDistanceToNow(comment.createdAt.toDate(), { addSuffix:true })}</small>
             </div>
             <div className="comment-content">
               <p>"{comment.content}"</p>

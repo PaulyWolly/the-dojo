@@ -77,9 +77,9 @@
 }
 .project-comments .comment-date {
   position: relative;
-  bottom: 60px;
-  left: 150px;
-  color: var(--text-color)
+  bottom: 39px;
+  left: 43px;
+  color: var(--text-color);
 }
 .project-comments .comment-author {
   display: flex;
