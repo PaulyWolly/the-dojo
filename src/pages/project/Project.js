@@ -24,7 +24,9 @@ export default function Project() {
   return (
 
     <div className="project-details">
+
       <div>
+        <h4 className="project-project">Project</h4>
         <ProjectSummary project={document} />
       </div>
       <div>

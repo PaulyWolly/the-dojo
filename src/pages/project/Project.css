@@ -38,10 +38,18 @@
   margin-top: 20px;
 }
 
+.project-details .project-project {
+  position: relative;
+  bottom: 22px;
+  color: var(--heading-color)
+}
+
 /* project comments */
 .project-comments {
   /* box-shadow: rgba(0, 0, 0, 0.19) 0px 8px 18px, rgba(0, 0, 0, 0.23) 0px 4px 4px; */
   padding: 28px;
+  position: relative;
+  bottom: 50px
   /* background-color: #fff; */
 }
 
