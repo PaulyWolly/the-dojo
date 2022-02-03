@@ -1,14 +1,18 @@
+/* from lesson 178 */
+
 .project-list {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 20px;
+
 }
 .project-list a {
   background-color: #fff;
   padding: 16px;
   border-radius: 6px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05); */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 8px 18px, rgba(0, 0, 0, 0.23) 0px 4px 4px;
   text-decoration: none;
   color: inherit;
 }
@@ -24,6 +28,7 @@
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid #eee;
+
 }
 .project-list ul {
   margin: 10px 0;
@@ -31,6 +36,7 @@
 }
 .project-list li {
   margin-right: 10px;
+
 }
 .project-list .avatar {
   width: 30px;

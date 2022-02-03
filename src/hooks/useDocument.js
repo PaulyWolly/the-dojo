@@ -7,8 +7,9 @@ export const useDocument = (collection, id) => {
 
   // realtime document data
   useEffect(() => {
+    // set up real time listener
     const ref = projectFirestore.collection(collection).doc(id)
-
+    // snapshot has all data on it
     const unsubscribe = ref.onSnapshot(snapshot => {
       // need to make sure the doc exists & has data
       if(snapshot.data()) {
@@ -23,7 +24,7 @@ export const useDocument = (collection, id) => {
       setError('failed to get document')
     })
 
-    // unsubscribe on unmount
+    // unsubscribe on unmount (cleanup function)
     return () => unsubscribe()
 
   }, [collection, id])

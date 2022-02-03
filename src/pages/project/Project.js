@@ -5,11 +5,12 @@ import { useFirestore } from "../../hooks/useFirestore"
 
 // styles
 import './Project.css'
+import ProjectComments from "./ProjectComments";
+import ProjectSummary from "./ProjectSummary";
 
 export default function Project() {
   const { id } = useParams()
   const { document, error } = useDocument('projects', id)
-  const { dueDate } = useFirestore('projects')
 
 
   if (error) {
@@ -19,17 +20,15 @@ export default function Project() {
     return <div className="loading">Loading...</div>
   }
 
-  const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
-  const  theDueDate = document.dueDate.toDate().toLocaleDateString('en-us', options)
 
   return (
 
     <div className="project-details">
       <div>
-        <h1>{document.name}</h1>
-        <p>{document.details}</p>
-        <p>&nbsp;</p>
-        <small>Due date:&nbsp;  <b>{theDueDate}</b></small>
+        <ProjectSummary project={document} />
+      </div>
+      <div>
+        <ProjectComments project={document} />
       </div>
 
     </div>

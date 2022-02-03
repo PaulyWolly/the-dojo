@@ -1,7 +1,10 @@
 .create-form {
   position: absolute;
-  bottom: 50px;
-  max-width: 600px;
+  top: 150px;
+  width: 600px;
+  max-width: 560px;
   margin-bottom: 50px;
-
+}
+.sidebar {
+  height: 100%;
 }
