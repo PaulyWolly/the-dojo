@@ -7,6 +7,8 @@ import ProjectList from '../../components/ProjectList'
 import './Dashboard.css'
 
 export default function Dashboard() {
+
+  // listener to the collection
   const { documents, error } = useCollection('projects')
 
   return (
