@@ -91,7 +91,7 @@
 .project-comments .comment-content {
   position: relative;
   bottom: 20px;
-  color: var(--text-color);
+  color: var(--text-color-dark);
   font-size: 0.9em;
 }
 .project-comments .comment-displayName {
@@ -100,4 +100,9 @@
 .project-comments .comment-avatar {
   position: relative;
   left: 10px;
+}
+
+.project-comments .comment-text {
+  font-size: 18px;
+  color: var(--text-color-dark)
 }
