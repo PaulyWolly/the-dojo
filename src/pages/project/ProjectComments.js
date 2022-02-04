@@ -31,6 +31,7 @@ export default function ProjectComments({ project }) {
     }
   }
 
+
   return (
     <div className='project-comments'>
       <h4>Project Comments</h4>
