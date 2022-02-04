@@ -33,6 +33,13 @@ export default function Dashboard() {
         return assignedToMe
       case 'development':
       case 'personal':
+        let myPersonal = false
+        document.assignedUsersList.forEach(u => {
+          if(u.id === user.uid) {
+            myPersonal = true
+          }
+        })
+        return myPersonal
       case 'design':
       case 'sales':
       case 'marketing':

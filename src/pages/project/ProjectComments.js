@@ -62,6 +62,7 @@ export default function ProjectComments({ project }) {
           <textarea
             required
             className='comment-text'
+            rows="5"
             onChange={(e) => setNewComment(e.target.value)}
             value={newComment}
           ></textarea>

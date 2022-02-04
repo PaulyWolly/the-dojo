@@ -14,7 +14,7 @@ const categories = [
   { value: 'personal', label: 'Personal' },
   { value: 'design', label: 'Design' },
   { value: 'sales', label: 'Sales' },
-  { value: 'marketing', label: 'Marketing' },
+  { value: 'marketing', label: 'Marketing' }
 ]
 
 export default function Create() {
@@ -123,6 +123,7 @@ export default function Create() {
           <Select
             onChange={(option) => setCategory(option)}
             options={categories}
+            //isMulti
           />
         </label>
         <label>
