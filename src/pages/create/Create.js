@@ -11,6 +11,7 @@ import './Create.css'
 
 const categories = [
   { value: 'development', label: 'Development' },
+  { value: 'personal', label: 'Personal' },
   { value: 'design', label: 'Design' },
   { value: 'sales', label: 'Sales' },
   { value: 'marketing', label: 'Marketing' },
