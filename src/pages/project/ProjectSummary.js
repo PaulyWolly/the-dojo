@@ -26,7 +26,7 @@ const ProjectSummary = ({ project }) => {
     <div>
       <div className='project-summary'>
         <h2 className='page-title'>{project.name}</h2>
-          <p>By {project.createdBy.displayName}</p>
+          <p><i>By {project.createdBy.displayName}</i></p>
           <p>{project.details}</p>
           <p>&nbsp;</p>
           <p className='due-date'>Due date:&nbsp;  <span className="dueDate-style">{theDueDate}</span></p>
